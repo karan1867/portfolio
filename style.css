@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        box-sizing: border-box;
+        font-style: normal;}
+}   
+
+.portfolio-cointainer{
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    
+}
+
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed ;
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: aliceblue;
+}
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background: rgb(8, 2, 2);
+    width:70% ;
+    padding-left: 3rem;
+
+}
+.right-container{
+background: rgb(17, 173, 239);
+width:30%
+}
+.icons .fa-brands{
+    color:white;
+    font-size: 1.7rem;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: column   ;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+    
+}
+
+.content{
+    margin-left: 4rem;
+    
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+.content .intro span{
+    color: rgb(17, 173, 239);
+}
+.content h1{
+    font-size: 4rem;
+    color: rgb(14, 166, 231);
+}
+
+.content .details{
+    font-size: 1.1rem;
+    color: aliceblue;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button{
+    border: .1rem solid rgb(16, 182, 237);
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+button:nth-child(1){
+    background: rgb(16, 182, 237);
+    color: rgb(35, 31, 25);
+}
+button:nth-child(2){
+    background: transparent;
+    color: rgb(14, 166, 231);
+    margin-left: 2rem;  
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: rgb(14, 166, 231);
+}
+button:nth-child(2):hover{
+    background:rgb(14, 166, 231);
+    color: rgb(35, 31, 25);
+}
+
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(white,rgb(9, 141, 193));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+     aspect-ratio: 1;
+     position: absolute;
+     border-radius: 50%;
+     top: 50%;
+     left: 70%;
+     transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg ,transparent 50%, rgb(11, 11, 11)50%);
+    width: 38rem;
+    
+
+}
+.circle:nth-child(2){
+    background-image: url("karan.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30rem;
+}
